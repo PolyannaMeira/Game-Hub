@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.background-img {
+    position: absolute; /* Para fixar a imagem atrás do conteúdo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para cobrir toda a tela sem distorcer */
+    z-index: -1; /* Para ficar atrás dos botões */
+}
+h1{
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.cell.taken {
+    cursor: default;
+}
+#status {
+    margin-top: 20px;
+    font-size: 24px;
+}

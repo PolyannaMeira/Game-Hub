@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+canvas {
+    border: 1px solid white;
+}
+#startMessage {
+    position: absolute;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+}
+#score {
+    font-size: 20px;
+    margin-bottom: 10px;
+}

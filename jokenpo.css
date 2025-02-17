@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.background-img {
+    position: absolute; /* Para fixar a imagem atrás do conteúdo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para cobrir toda a tela sem distorcer */
+    z-index: -1; /* Para ficar atrás dos botões */
+}
+
+.container{
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.buttons{
+    margin: 30px 0;
+    display: flex;
+    gap:40px;
+}
+
+button{
+    padding: 10px;
+    font-size: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.5 ease-in-out;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+#rock{
+    background-color: blueviolet;
+}
+#paper{
+    background-color: green;
+}
+#scissors{
+    background-color: #7dbeed;
+}
+
+p{
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.your-score span{
+    color: rgb(21, 64, 137);
+}
+
+.machine-score span{
+    color: rgb(224, 71, 15);
+}
+
+
